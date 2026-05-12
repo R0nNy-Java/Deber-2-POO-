@@ -1,3 +1,17 @@
 public enum TipodeDia {
-    LABORAL,FIN_DE_SEMANA, FESTIVO
+    LABORAL ("Atrabajar"),
+    FIN_DE_SEMANA ("Dia de descanso"),
+    FESTIVO("Paseo");
+
+    public String descripcion;
+
+    private TipodeDia ( String descripcion){
+        this.descripcion = descripcion;
+    }
+
+    public String getDescripcion (){
+        return descripcion;
+    }
+
+
 }
